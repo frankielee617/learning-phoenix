@@ -49,8 +49,8 @@ defmodule LearningPhoenixWeb.Endpoint do
   plug Plug.MethodOverride
   plug Plug.Head
   plug Plug.Session, @session_options
-  plug LearningPhoenixWeb.Router
   plug :introspect
+  plug LearningPhoenixWeb.Router
 
   def introspect(conn, _opts) do
     IO.puts("""

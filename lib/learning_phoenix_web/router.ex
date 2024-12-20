@@ -8,7 +8,7 @@ defmodule LearningPhoenixWeb.Router do
     plug :put_root_layout, html: {LearningPhoenixWeb.Layouts, :root}
     plug :protect_from_forgery
     plug :put_secure_browser_headers
-    plug LearningPhoenixWeb.Plugs.Locale, "en"
+    plug LearningPhoenixWeb.Plugs.Locale, "fr"
   end
 
   pipeline :api do
